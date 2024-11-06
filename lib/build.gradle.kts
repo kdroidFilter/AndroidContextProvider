@@ -40,7 +40,6 @@ mavenPublishing {
         version = "1.0.1"
     )
 
-    // Configure POM metadata for the published artifact
     pom {
         name.set("AndroidContextProvider")
         description.set("Android Context Provider is a simple utility library that allows you to easily access the application context from anywhere in your app. This can be especially useful for situations where accessing the context in a static manner is needed.")
@@ -54,7 +53,6 @@ mavenPublishing {
             }
         }
 
-        // Specify developers information
         developers {
             developer {
                 id.set("kdroidfilter")
@@ -63,17 +61,13 @@ mavenPublishing {
             }
         }
 
-        // Specify SCM information
         scm {
             url.set("https://github.com/kdroidFilter/AndroidContextProvider")
         }
     }
 
-    // Configure publishing to Maven Central
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
 
-
-    // Enable GPG signing for all publications
     signAllPublications()
 }
 
