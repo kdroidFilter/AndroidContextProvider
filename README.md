@@ -4,14 +4,23 @@ Android Context Provider is a simple utility library that allows you to easily a
 
 ## Features
 
+- Uses 0 dependencies, making it lightweight and easy to integrate.
+
 - Easy initialization with your application context.
+
 - Access the application context from any part of your code.
 
 ## Getting Started
 
 ### Installation
 
-To use the `ContextProvider` in your Android project, add it as a dependency. If you are distributing it as an open-source library, you would publish it on a package repository like Maven. For now, you can add it manually to your project.
+The library is available on Maven Central.
+
+To import it into your project, add the following to your `build.gradle.kts` file:
+
+```kotlin
+implementation("io.github.kdroidfilter:androidcontextprovider:1.0.0")
+```
 
 ### Usage
 
@@ -31,20 +40,6 @@ To use the `ContextProvider` in your Android project, add it as a dependency. If
 
 - **Automatic Initialization**: The `ContextProvider` is initialized automatically via `ContentProvider`, eliminating the need for manual setup.
 - **Error Handling**: If you try to get the context before it is initialized, `ContextProvider` will throw an `IllegalStateException`. However, with automatic initialization, this scenario is unlikely.
-
-## Example
-
-Here is a complete example of how to use `ContextProvider` in an Android application:
-
-```kotlin
-// Access context anywhere
-class SomeUtility {
-    fun doSomething() {
-        val context = ContextProvider.getContext()
-        // Use the context
-    }
-}
-```
 
 ## License
 
