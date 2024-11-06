@@ -29,7 +29,7 @@ implementation("io.github.kdroidfilter:androidcontextprovider:1.0.1")
 
 2. **Getting the Context**
 
-   You can access the application context from anywhere in your app like this:
+   You can access the application context (not an activity context) from anywhere in your app like this:
 
    ```kotlin
    val context = ContextProvider.getContext()
