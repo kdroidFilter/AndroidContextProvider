@@ -19,7 +19,7 @@ The library is available on Maven Central.
 To import it into your project, add the following to your `build.gradle.kts` file:
 
 ```kotlin
-implementation("io.github.kdroidfilter:androidcontextprovider:1.0.0")
+implementation("io.github.kdroidfilter:androidcontextprovider:1.0.1")
 ```
 
 ### Usage
